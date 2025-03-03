@@ -1,7 +1,6 @@
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
@@ -17,11 +16,13 @@ export default function Header() {
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem className="hidden md:block">
-            <BreadcrumbLink href="#">Building Your Application</BreadcrumbLink>
+            <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+              Easy Cover
+            </h1>
           </BreadcrumbItem>
           <BreadcrumbSeparator className="hidden md:block" />
           <BreadcrumbItem>
-            <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+            <BreadcrumbPage>선택한 프로젝트 이름</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
