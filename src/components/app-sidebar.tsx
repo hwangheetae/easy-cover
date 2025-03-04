@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import Link from "next/link";
 import { Trash2 } from "lucide-react";
 import { MoreHorizontal } from "lucide-react";
 import { SearchForm } from "@/components/search-form";
@@ -29,7 +29,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-        로고
+        <h4 className="p-4 scroll-m-20 text-xl font-semibold tracking-tight">
+          Projects
+        </h4>
         <SearchForm />
       </SidebarHeader>
       <SidebarContent className="gap-0">
@@ -39,9 +41,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               {data.map((project, index) => (
                 <SidebarMenuItem key={`${project}-${index}`}>
                   <SidebarMenuButton asChild>
-                    <a href="#">
+                    <Link href={`/${project}`}>
                       <span>{project}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
