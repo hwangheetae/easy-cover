@@ -29,7 +29,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
-        <h4 className="p-4 scroll-m-20 text-xl font-semibold tracking-tight">
+        <h4 className="p-4 scroll-m-20 text-xl font-nanum-extrabold font-semibold tracking-tight">
           Projects
         </h4>
         <SearchForm />

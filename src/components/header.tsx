@@ -25,7 +25,7 @@ export default function Header() {
           <BreadcrumbItem className="hidden md:block">
             <BreadcrumbLink href="/">
               <h1
-                className={`scroll-m-20 text-2xl font-semibold tracking-tight  ${
+                className={` font-nanum-extrabold scroll-m-20 text-2xl  tracking-tight  ${
                   pathname === "/" ? "text-black" : ""
                 }`}
               >
@@ -38,7 +38,7 @@ export default function Header() {
           )}
           <BreadcrumbItem>
             <BreadcrumbPage>
-              <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+              <h3 className=" font-nanum-extrabold scroll-m-20 text-2xl tracking-tight">
                 {pathname.split("/")}
               </h3>
             </BreadcrumbPage>
